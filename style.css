@@ -1,0 +1,158 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f171a;
+}
+
+.container{
+    max-width: 450px;
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.amount{
+    margin-bottom: 20px;
+}
+
+.amount p{
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.amount input{
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.amount input:focus{
+    outline: none;
+    border-color: #007bff;
+}
+
+.dropdowns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.from, .to{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.from p, .to p{
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.select-box{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.select-box select{
+    padding: 8px;
+    border: 2px solid #e1e5e9;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.select-box select:focus{
+    outline: none;
+    border-color: #007bff;
+}
+
+.select-box img{
+    width: 40px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px soild #ccc;
+}
+
+.reverse{
+    font-size: 1.5rem;
+    padding: 8px 14px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reverse:hover{
+    background-color: #0056b3;
+}
+
+.result{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result:not(:empty){
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    color: #495057;
+}
+
+.result:contains("Getting exchange rate"){
+    background-color: #fff3cd;
+    border-color: #ffeaa7;
+    color: #856404;
+}
+
+.result:contains("Error"){
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+button[type="submit"]{
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+button[type="submit"]:hover{
+    background-color: #218838;
+}
+
+button[type="submit"]:active{
+    transform: translateY(1px);
+}
